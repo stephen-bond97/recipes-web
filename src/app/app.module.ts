@@ -5,9 +5,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 
 import { ShellComponent } from './shell/shell.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { HomePage } from './pages/home/home.page';
+import { RecipeListPage } from './pages/recipe-list/recipe-list.page';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomePage },
+
+  { path: 'recipes', component: RecipeListPage },
   /*
   { path: ':gamertag', redirectTo: 'clips/:gamertag', pathMatch: 'full' },
   { path: 'clips/:gamertag', component: ClipsComponent },
@@ -17,7 +23,9 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    ShellComponent
+    ShellComponent,
+    HomePage,
+    RecipeListPage
   ],
   imports: [
     BrowserModule,    
