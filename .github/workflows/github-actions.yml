@@ -39,7 +39,7 @@ jobs:
       - name: Deploy to Github pages
         uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.2
         with:
-          github_access_token: ${{ secrets.gh_pages_access_token }}
+          github_access_token: ${{ secrets.GH_SECRET_ACCESS_TOKEN }}
           build_configuration: production
           base_href: /recipes-web/
           deploy_branch: gh-pages
