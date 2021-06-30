@@ -1,6 +1,17 @@
-<a routerLink="home">Home</a>
-<a routerLink="recipes">Recipes</a>
-<router-outlet></router-outlet>
+<mat-drawer-container hasBackdrop="true">
+  <mat-drawer #drawer mode="over">I'm a drawer</mat-drawer>
+  <mat-drawer-content>
+    <!-- <button mat-raised-button (click)="drawer.toggle()">Toggle drawer</button> -->
+    <app-toolbar (menuClicked)="drawer.toggle()"></app-toolbar>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
+
+
+<!-- <a routerLink="home">Home</a>
+<a routerLink="recipes">Recipes</a> -->
+
+
 
 <!-- <h1>{{ Title }}</h1>
 <button mat-button>click me</button>
@@ -17,3 +28,4 @@
     <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
   </mat-form-field>
 </form> -->
+

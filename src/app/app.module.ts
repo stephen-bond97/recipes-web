@@ -8,6 +8,7 @@ import { ShellComponent } from './shell/shell.component';
 import { FormsModule } from '@angular/forms';
 import { HomePage } from './pages/home/home.page';
 import { RecipeListPage } from './pages/recipe-list/recipe-list.page';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -25,7 +26,8 @@ const routes: Routes = [
   declarations: [
     ShellComponent,
     HomePage,
-    RecipeListPage
+    RecipeListPage,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,    
