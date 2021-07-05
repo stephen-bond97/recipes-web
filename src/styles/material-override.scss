@@ -1,0 +1,24 @@
+@use '~@angular/material' as mat;
+
+$my-custom-typography: mat.define-typography-config(
+    $font-family: "Poppins",
+);
+
+@include mat.core($my-custom-typography);
+  
+.sidenav .mat-list-item-content {
+
+    .mat-icon {
+        font-size: 2rem !important;
+        height: unset !important;
+        width: unset !important;
+    }
+
+    .mat-list-text {
+        line-height: 1.5rem !important;
+
+        div.mat-line {
+            font-size: 1.25rem !important;
+        }
+    }
+}

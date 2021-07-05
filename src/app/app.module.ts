@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './pages/home/home.page';
 import { RecipeListPage } from './pages/recipe-list/recipe-list.page';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -27,7 +28,8 @@ const routes: Routes = [
     ShellComponent,
     HomePage,
     RecipeListPage,
-    ToolbarComponent
+    ToolbarComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,    

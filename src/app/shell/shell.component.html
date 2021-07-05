@@ -1,5 +1,18 @@
 <mat-drawer-container hasBackdrop="true">
-  <mat-drawer #drawer mode="over">I'm a drawer</mat-drawer>
+  <mat-drawer class='sidenav' #drawer mode="over">
+    <app-profile></app-profile>
+    <mat-list (mouseup)="drawer.close()">
+      <mat-list-item routerLink="home">
+        <mat-icon mat-list-icon>home</mat-icon>
+        <div mat-line>Home</div>
+      </mat-list-item>
+      <mat-list-item routerLink="recipes">
+        <mat-icon mat-list-icon>restaurant_menu</mat-icon>
+        <div mat-line>Recipes</div>
+      </mat-list-item>
+      <!-- <mat-divider></mat-divider> -->
+    </mat-list>
+  </mat-drawer>
   <mat-drawer-content>
     <!-- <button mat-raised-button (click)="drawer.toggle()">Toggle drawer</button> -->
     <app-toolbar (menuClicked)="drawer.toggle()"></app-toolbar>
@@ -28,4 +41,3 @@
     <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
   </mat-form-field>
 </form> -->
-
