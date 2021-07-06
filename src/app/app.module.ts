@@ -10,12 +10,18 @@ import { HomePage } from './pages/home/home.page';
 import { RecipeListPage } from './pages/recipe-list/recipe-list.page';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { PlannerPage } from './pages/planner/planner.page';
+import { RandomRecipePage } from './pages/random-recipe/random-recipe.page';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomePage },
 
   { path: 'recipes', component: RecipeListPage },
+
+  { path: 'planner', component: PlannerPage },
+
+  { path: 'random-recipe', component: RandomRecipePage },
   /*
   { path: ':gamertag', redirectTo: 'clips/:gamertag', pathMatch: 'full' },
   { path: 'clips/:gamertag', component: ClipsComponent },
@@ -29,7 +35,9 @@ const routes: Routes = [
     HomePage,
     RecipeListPage,
     ToolbarComponent,
-    ProfileComponent
+    ProfileComponent,
+    PlannerPage,
+    RandomRecipePage
   ],
   imports: [
     BrowserModule,    

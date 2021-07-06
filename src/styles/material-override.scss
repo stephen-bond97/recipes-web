@@ -8,17 +8,23 @@ $my-custom-typography: mat.define-typography-config(
   
 .sidenav .mat-list-item-content {
 
+    .mat-button {
+        flex: 1;
+
+        span {
+            display: flex;
+        }
+
+        div.mat-line {
+            font-size: 1.25rem !important;
+            padding-left: .5rem;
+            padding-top: .2rem;
+        }
+    }
+
     .mat-icon {
         font-size: 2rem !important;
         height: unset !important;
         width: unset !important;
-    }
-
-    .mat-list-text {
-        line-height: 1.5rem !important;
-
-        div.mat-line {
-            font-size: 1.25rem !important;
-        }
     }
 }
