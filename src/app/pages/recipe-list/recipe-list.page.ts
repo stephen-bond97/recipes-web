@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { StorageHelperService } from 'src/app/services/storage-helper.service';
 
 @Component({
   selector: 'app-recipe-list',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipeListPage implements OnInit {
 
-  constructor() { }
+  public recipes: Recipe[];
+
+  constructor(private storageHelper: StorageHelperService, private router: Router) {
+    this.recipes = storageHelper.Recipes;
+  }
 
   ngOnInit(): void {
+  }
+
+  public handleRecipeSelected(recipe: Recipe): void {
+    console.log(recipe);
+    this.router.navigateByUrl("/recipe/pizza");
   }
 
 }

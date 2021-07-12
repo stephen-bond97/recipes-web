@@ -12,6 +12,8 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { PlannerPage } from './pages/planner/planner.page';
 import { RandomRecipePage } from './pages/random-recipe/random-recipe.page';
+import { RecipePage } from './pages/recipe/recipe.page';
+import { StorageHelperService } from './services/storage-helper.service';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -22,6 +24,8 @@ const routes: Routes = [
   { path: 'planner', component: PlannerPage },
 
   { path: 'random-recipe', component: RandomRecipePage },
+
+  { path: 'recipe/:recipe-name', component: RecipePage }
   /*
   { path: ':gamertag', redirectTo: 'clips/:gamertag', pathMatch: 'full' },
   { path: 'clips/:gamertag', component: ClipsComponent },
@@ -37,7 +41,8 @@ const routes: Routes = [
     ToolbarComponent,
     ProfileComponent,
     PlannerPage,
-    RandomRecipePage
+    RandomRecipePage,
+    RecipePage,
   ],
   imports: [
     BrowserModule,    
@@ -48,7 +53,7 @@ const routes: Routes = [
 
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [ StorageHelperService ],
   bootstrap: [ ShellComponent ]
 })
 export class AppModule { }

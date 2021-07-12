@@ -1,0 +1,34 @@
+<h1>{{recipe.Title}}</h1>
+
+<mat-accordion class="prevent-click">
+    <mat-expansion-panel [hideToggle]="true" [expanded]="true">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Description
+            </mat-panel-title>
+            <mat-panel-description>
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>{{ recipe.Description }}</p>
+    </mat-expansion-panel>
+    <mat-expansion-panel [hideToggle]="true">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Ingredients
+            </mat-panel-title>
+            <mat-panel-description>
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p class="ingredients">{{ recipe.Ingredients }}</p>
+    </mat-expansion-panel>
+    <mat-expansion-panel [hideToggle]="true">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Steps
+            </mat-panel-title>
+            <mat-panel-description>
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p class="steps">{{ recipe.Steps }}</p>
+    </mat-expansion-panel>
+</mat-accordion>

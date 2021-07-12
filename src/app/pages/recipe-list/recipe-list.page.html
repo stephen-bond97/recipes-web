@@ -1,1 +1,8 @@
-<p>recipe-list works!</p>
+<mat-selection-list [multiple]="false">
+    <ng-container *ngFor="let recipe of recipes">
+        <mat-list-option (click)="handleRecipeSelected(recipe)">
+            {{ recipe.Title }}
+        </mat-list-option>
+        <mat-divider></mat-divider>
+    </ng-container>
+</mat-selection-list>

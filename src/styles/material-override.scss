@@ -6,6 +6,14 @@ $my-custom-typography: mat.define-typography-config(
 
 @include mat.core($my-custom-typography);
   
+.mat-list-base {
+    padding-top: 0 !important;
+}
+
+.mat-expansion-panel-body {
+    padding: 0 !important;
+}
+
 .sidenav .mat-list-item-content {
 
     .mat-button {
