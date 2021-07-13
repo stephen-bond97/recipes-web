@@ -6,3 +6,5 @@
         <mat-divider></mat-divider>
     </ng-container>
 </mat-selection-list>
+
+<button mat-button *ngIf="recipes.length==0" (click)="populateTestData()">create test data</button>
