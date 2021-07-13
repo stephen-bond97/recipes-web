@@ -32,8 +32,8 @@ jobs:
       - name: npm dependencies
         run: npm install
 
-      - name: Test Angular project
-        run: npm run test
+      #- name: Test Angular project
+      #  run: npm run test
 
       # Deploys to Github pages if tests pass
       - name: Deploy to Github pages
