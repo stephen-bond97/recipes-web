@@ -2,25 +2,25 @@
   <mat-drawer class='sidenav' #drawer mode="over">
     <app-profile></app-profile>
     <mat-list (mouseup)="drawer.close()">
-      <mat-list-item routerLink="home" matTooltip="This takes the user home" matTooltipClass="example-tooltip-red">
+      <mat-list-item routerLink="/home" matTooltip="This takes the user home" matTooltipClass="example-tooltip-red">
         <button mat-button color="accent">
           <mat-icon mat-list-icon>home</mat-icon>
           <div mat-line>Home</div>
         </button>
       </mat-list-item>
-      <mat-list-item routerLink="recipes" matTooltip="This takes the user to recipes" matTooltipClass="example-tooltip-red">
+      <mat-list-item routerLink="/recipes" matTooltip="This takes the user to recipes" matTooltipClass="example-tooltip-red">
         <button mat-button>
           <mat-icon mat-list-icon>restaurant_menu</mat-icon>
           <div mat-line>Recipes</div>
         </button>
       </mat-list-item>
-      <mat-list-item routerLink="planner" matTooltip="This takes the user to the planner page" matTooltipClass="example-tooltip-red">
+      <mat-list-item routerLink="/planner" matTooltip="This takes the user to the planner page" matTooltipClass="example-tooltip-red">
         <button mat-button>
           <mat-icon mat-list-icon>library_books</mat-icon>
           <div mat-line>Planner</div>
         </button>
       </mat-list-item>
-      <mat-list-item routerLink="random-recipe" matTooltip="This takes the user to a random recipe" matTooltipClass="example-tooltip-red">
+      <mat-list-item routerLink="/random-recipe" matTooltip="This takes the user to a random recipe" matTooltipClass="example-tooltip-red">
         <button mat-button>
           <mat-icon mat-list-icon>shuffle</mat-icon>
           <div mat-line>Random Recipe</div>

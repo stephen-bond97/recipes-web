@@ -1,31 +1,44 @@
 <h1>New Recipe</h1>
-<form class="example-form">
-    <mat-form-field class="food-title-input" appearance="fill">
-      <mat-label>Recipe Title</mat-label>
-      <input matInput>
-    </mat-form-field>
-  
-    <table class="example-form" cellspacing="0"><tr>
-      <td><mat-form-field class="food-description-input" appearance="fill">
+<mat-form-field class="food-title-input" appearance="fill">
+  <mat-label>Recipe Title</mat-label>
+  <input matInput [(ngModel)]="recipe.Title">
+</mat-form-field>
+
+<table class="example-form" cellspacing="0">
+  <tr>
+    <td>
+      <mat-form-field class="food-description-input" appearance="fill">
         <mat-label>Food Description</mat-label>
         <textarea matInput></textarea>
-      </mat-form-field></td>
-    </tr></table>
-  
-    <p>
-      <mat-form-field class="food-prep" appearance="fill">
-        <mat-label>Prep Time</mat-label>
-        <input matInput>
       </mat-form-field>
-      <mat-form-field class="food-serves" appearance="fill">
-        <mat-label># Serves</mat-label>
-        <input matInput type="number" placeholder="0" (keypress)="numberOnly($event)">
-      </mat-form-field>
-    </p>
-  </form>
+    </td>
+  </tr>
+</table>
 
-  <button mat-button routerLink="..">Add Recipe</button>
-  
+<p>
+  <mat-form-field class="food-prep" appearance="fill">
+    <mat-label>Prep Time</mat-label>
+    <input matInput>
+  </mat-form-field>
+ <mat-form-field appearance="fill">
+  <mat-label># Serves</mat-label>
+  <mat-select [(value)]="recipe.Serves">
+    <mat-option value="1">1</mat-option>
+    <mat-option value="2">2</mat-option>
+    <mat-option value="3">3</mat-option>
+    <mat-option value="4">4</mat-option>
+    <mat-option value="5">5</mat-option>
+    <mat-option value="6">6</mat-option>
+    <mat-option value="7">7</mat-option>
+    <mat-option value="8">8</mat-option>
+    <mat-option value="9">9</mat-option>
+    <mat-option value="10">10</mat-option>
+  </mat-select>
+</mat-form-field>
+</p>
+
+<button mat-button routerLink="/recipes">Add Recipe</button>
+
 <!-- 
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 

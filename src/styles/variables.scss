@@ -3,7 +3,7 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$recipe-app-primary: 	mat-palette($mat-deep-purple, 600);
+$recipe-app-primary: 	mat-palette($mat-cyan, 300);
 $recipe-app-accent:  	mat-palette($mat-orange, A400);
 $recipe-app-warn:    	mat-palette($mat-yellow, A100);
 $recipe-app-bg:		    mat-palette($mat-red, 700);

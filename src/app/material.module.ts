@@ -12,6 +12,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTableModule } from '@angular/material/table';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
 	imports: [
@@ -27,7 +28,8 @@ import { MatTableModule } from '@angular/material/table';
 		MatTooltipModule,
 		MatCardModule,
 		MatExpansionModule,
-		MatTableModule
+		MatTableModule,
+		MatSelectModule
 	],
 	exports: [
 		MatFormFieldModule,
@@ -42,7 +44,8 @@ import { MatTableModule } from '@angular/material/table';
 		MatTooltipModule,
 		MatCardModule,
 		MatExpansionModule,
-		MatTableModule
+		MatTableModule,
+		MatSelectModule
 	]
 })
 export class MaterialModule {}
