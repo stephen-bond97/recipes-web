@@ -1,3 +1,5 @@
+<button mat-button routerLink="new-recipe">Add New Recipe</button>
+
 <mat-selection-list [multiple]="false">
     <ng-container *ngFor="let recipe of recipes">
         <mat-list-option (click)="handleRecipeSelected(recipe)">

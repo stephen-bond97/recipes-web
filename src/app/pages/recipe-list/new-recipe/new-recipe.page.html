@@ -1,0 +1,56 @@
+<h1>New Recipe</h1>
+<form class="example-form">
+    <mat-form-field class="food-title-input" appearance="fill">
+      <mat-label>Recipe Title</mat-label>
+      <input matInput>
+    </mat-form-field>
+  
+    <table class="example-form" cellspacing="0"><tr>
+      <td><mat-form-field class="food-description-input" appearance="fill">
+        <mat-label>Food Description</mat-label>
+        <textarea matInput></textarea>
+      </mat-form-field></td>
+    </tr></table>
+  
+    <p>
+      <mat-form-field class="food-prep" appearance="fill">
+        <mat-label>Prep Time</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field class="food-serves" appearance="fill">
+        <mat-label># Serves</mat-label>
+        <input matInput type="number" placeholder="0" (keypress)="numberOnly($event)">
+      </mat-form-field>
+    </p>
+  </form>
+
+  <button mat-button routerLink="..">Add Recipe</button>
+  
+<!-- 
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="step">
+      <th mat-header-cell *matHeaderCellDef> No. </th>
+      <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="ingredient">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="amount">
+      <th mat-header-cell *matHeaderCellDef> Weight </th>
+      <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="symbol">
+      <th mat-header-cell *matHeaderCellDef> Symbol </th>
+      <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  
+   -->

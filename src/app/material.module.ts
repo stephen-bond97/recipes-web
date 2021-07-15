@@ -11,6 +11,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
 	imports: [
@@ -25,7 +26,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
 		MatListModule,
 		MatTooltipModule,
 		MatCardModule,
-		MatExpansionModule
+		MatExpansionModule,
+		MatTableModule
 	],
 	exports: [
 		MatFormFieldModule,
@@ -39,7 +41,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
 		MatListModule,
 		MatTooltipModule,
 		MatCardModule,
-		MatExpansionModule
+		MatExpansionModule,
+		MatTableModule
 	]
 })
 export class MaterialModule {}

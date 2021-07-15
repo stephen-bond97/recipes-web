@@ -14,6 +14,7 @@ import { PlannerPage } from './pages/planner/planner.page';
 import { RandomRecipePage } from './pages/random-recipe/random-recipe.page';
 import { RecipePage } from './pages/recipe/recipe.page';
 import { StorageHelperService } from './services/storage-helper.service';
+import { NewRecipePage } from './pages/recipe-list/new-recipe/new-recipe.page';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -25,7 +26,9 @@ const routes: Routes = [
 
   { path: 'random-recipe', component: RandomRecipePage },
 
-  { path: 'recipe/:recipe-name', component: RecipePage }
+  { path: 'recipe/:recipe-name', component: RecipePage },
+
+  { path: 'recipes/new-recipe', component: NewRecipePage }
   /*
   { path: ':gamertag', redirectTo: 'clips/:gamertag', pathMatch: 'full' },
   { path: 'clips/:gamertag', component: ClipsComponent },
@@ -43,6 +46,7 @@ const routes: Routes = [
     PlannerPage,
     RandomRecipePage,
     RecipePage,
+    NewRecipePage,
   ],
   imports: [
     BrowserModule,    
