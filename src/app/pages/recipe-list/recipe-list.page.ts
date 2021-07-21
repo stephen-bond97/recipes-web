@@ -25,19 +25,19 @@ export class RecipeListPage implements OnInit {
 
   public populateTestData(): void {
     this.storageHelper.AddNewItem({
-      Title: "Chilli Pizza", Description: "Very spicy very nice", Ingredients: "cheese and tomato and chilli", Steps: "asdadsasdasd"
+      Title: "Chilli Pizza", Description: "Very spicy very nice", Ingredients: "cheese and tomato and chilli", Steps: []
     });
 
     this.storageHelper.AddNewItem({
-      Title: "Chicken", Description: "tastes like chicken", Ingredients: "chicken", Steps: "asdadsasdasd"
+      Title: "Chicken", Description: "tastes like chicken", Ingredients: "chicken", Steps: []
     });
 
     this.storageHelper.AddNewItem({
-      Title: "tikka masala", Description: "indian food", Ingredients: "coconut, yoghurt, chilli", Steps: "asdadsasdasd"
+      Title: "tikka masala", Description: "indian food", Ingredients: "coconut, yoghurt, chilli", Steps: []
     });
 
     this.storageHelper.AddNewItem({
-      Title: "chicken balls", Description: "unreal", Ingredients: "chicken and balls", Steps: "asdadsasdasd"
+      Title: "chicken balls", Description: "unreal", Ingredients: "chicken and balls", Steps: []
     });
   }
 }

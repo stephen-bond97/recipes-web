@@ -7,7 +7,7 @@
 @include mat-core();
 
 // Create the theme object (a Sass map containing all of the palettes).
-$recipe-app-theme: mat-dark-theme($recipe-app-primary, $recipe-app-accent, $recipe-app-warn);
+$recipe-app-theme: mat-light-theme($recipe-app-primary, $recipe-app-accent, $recipe-app-warn);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component

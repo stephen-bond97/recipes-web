@@ -8,8 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class NewRecipePage implements OnInit {
 
   public recipe: Recipe = {
-    Title: "", Description: "", PrepTime: "", Serves: "10",
+    Title: "", Description: "", PrepTime: "", Serves: "1", Steps: [{
+      Index: 0,
+      Content: "blah"
+    },
+      {
+      Index: 1,
+      Content: "wangers"
+      }   , 
+  ]
   };
+
+  public displayedColumns: string[] = ["Content", "Edit"];
 
   constructor() { }
 

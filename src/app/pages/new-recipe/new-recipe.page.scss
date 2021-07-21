@@ -1,10 +1,36 @@
+:host {
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
     margin: 0.5rem;
 }
 
-.food-description-input {
-    width: 20rem;
+.input-section {
+    display: flex;
+    padding: 0.5rem;
+
+    mat-form-field, table {
+        flex: 1 1 100%;
+        width: 0;
+        line-height: 1.3rem;
+    }
+
+    .spacer {
+        flex: unset;
+        width: 0.5rem;
+    }
 }
+
+button {
+    margin: 0.5rem;
+}
+
+.header {
+    color: lightgrey;
+}
+
 
 // .food-serves {
 //     margin-left: 0.5em;

@@ -5,7 +5,7 @@ $my-custom-typography: mat.define-typography-config(
 );
 
 @include mat.core($my-custom-typography);
-  
+
 .mat-list-base {
     padding-top: 0 !important;
 }
@@ -15,7 +15,6 @@ $my-custom-typography: mat.define-typography-config(
 }
 
 .sidenav .mat-list-item-content {
-
     .mat-button {
         flex: 1;
 
@@ -25,8 +24,8 @@ $my-custom-typography: mat.define-typography-config(
 
         div.mat-line {
             font-size: 1.25rem !important;
-            padding-left: .5rem;
-            padding-top: .2rem;
+            padding-left: 0.5rem;
+            padding-top: 0.2rem;
         }
     }
 
@@ -34,5 +33,17 @@ $my-custom-typography: mat.define-typography-config(
         font-size: 2rem !important;
         height: unset !important;
         width: unset !important;
+    }
+}
+
+table {
+    .header {
+        // background-color: lightgrey !important;
+        height: 0 !important;
+    }
+
+    .centered-cell {
+        display: flex !important;
+        justify-content: right !important;
     }
 }

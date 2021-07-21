@@ -29,6 +29,6 @@
             <mat-panel-description>
             </mat-panel-description>
         </mat-expansion-panel-header>
-        <p class="steps">{{ recipe.Steps }}</p>
+        <p class="steps" *ngFor="let step of recipe.Steps">{{ step }}</p>
     </mat-expansion-panel>
 </mat-accordion>
