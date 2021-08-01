@@ -60,7 +60,7 @@
 
       <th mat-header-cell hidden *matHeaderCellDef>Edit</th>
       <td mat-cell class="centered-cell" *matCellDef="let step">
-        <button mat-raised-button>Edit</button>
+        <button mat-raised-button (click)="handleEditStepClick(step)">Edit</button>
         <span class="spacer"></span>
         <span class="spacer"></span>
         <button mat-icon-button>
@@ -76,4 +76,10 @@
 
 </div>
 
-<button mat-raised-button color="primary" routerLink="/recipes">Add Recipe</button>
+<button mat-raised-button color="primary" (click)="handleAddStepClick()">Add Step</button>
+
+<div class="fab-container">
+  <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
+    <mat-icon>add</mat-icon>
+  </button>
+</div>

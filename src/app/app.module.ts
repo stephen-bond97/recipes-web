@@ -15,6 +15,7 @@ import { RandomRecipePage } from './pages/random-recipe/random-recipe.page';
 import { RecipePage } from './pages/recipe/recipe.page';
 import { StorageHelperService } from './services/storage-helper.service';
 import { NewRecipePage } from './pages/new-recipe/new-recipe.page';
+import { RecipeStepDialog } from './components/recipe-step/recipe-step.dialog';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -47,6 +48,7 @@ const routes: Routes = [
     RandomRecipePage,
     RecipePage,
     NewRecipePage,
+    RecipeStepDialog,
   ],
   imports: [
     BrowserModule,    

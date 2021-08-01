@@ -13,6 +13,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTableModule } from '@angular/material/table';
 import { MatSelectModule } from '@angular/material/select';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
 	imports: [
@@ -29,7 +30,8 @@ import { MatSelectModule } from '@angular/material/select';
 		MatCardModule,
 		MatExpansionModule,
 		MatTableModule,
-		MatSelectModule
+		MatSelectModule,
+		MatDialogModule
 	],
 	exports: [
 		MatFormFieldModule,
@@ -45,7 +47,8 @@ import { MatSelectModule } from '@angular/material/select';
 		MatCardModule,
 		MatExpansionModule,
 		MatTableModule,
-		MatSelectModule
+		MatSelectModule,
+		MatDialogModule
 	]
 })
 export class MaterialModule {}
